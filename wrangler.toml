@@ -3,12 +3,12 @@ main = "email-worker.js"
 type = "javascript-email"
 compatibility_date = "2024-01-01"
 
-# Service API endpoint (port 9001) — used by this worker for inbound email delivery
+# Service API endpoint — used by this worker for inbound email delivery
+# This goes through the Next.js app on port 443, which proxies to port 9001
 [vars]
-# YOURPOST_SERVICE_URL = "http://yourpost.yourdomain.com:9001"
+YOURPOST_SERVICE_URL = "https://yourpost.app"
 
 # Use secrets for sensitive values (recommended):
-# wrangler secret put YOURPOST_SERVICE_URL
 # wrangler secret put YOURPOST_SERVICE_TOKEN
 
 [observability]
