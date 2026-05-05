@@ -1,4 +1,4 @@
-name = "yourpost"
+name = "yourpost-email-worker" # Name of the worker
 main = "email-worker.js"
 type = "javascript-email"
 compatibility_date = "2024-01-01"
