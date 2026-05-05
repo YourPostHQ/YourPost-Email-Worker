@@ -5,7 +5,7 @@ compatibility_date = "2024-01-01"
 
 # Service API endpoint (port 9001) — used by this worker for inbound email delivery
 [vars]
-YOURPOST_SERVICE_URL = "http://yourpost.yourdomain.com:9001"
+# YOURPOST_SERVICE_URL = "http://yourpost.yourdomain.com:9001"
 
 # Use secrets for sensitive values (recommended):
 # wrangler secret put YOURPOST_SERVICE_URL
